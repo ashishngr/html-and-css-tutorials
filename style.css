@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-width: 580px;
+}
+.main{
+    background-color: #ffff;
+    display: block;
+    font-family:  "futura-pt,Avenir,-apple-system","BlinkMacSystemFont","Segoe UI","Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: solid 2px;
+    border-color: rgb(210, 210, 210);
+    font-style: bold;
+    font-size: 18px;
+    box-shadow: 0 0 12px 0 rgb(200, 199, 199);
+}
+.left-header{
+    display: flex;
+    flex-direction: row;
+    padding-left: 2rem;
+    flex-wrap: wrap;
+}
+.left-menu-items{
+   list-style: none;
+   display: flex;
+   flex-direction: row;
+   gap: 20px;
+   cursor: pointer;
+   flex-wrap: wrap;
+}
+.header-right{
+    display: block;
+    padding-right: 5rem;
+}
+.header-right-items{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+    cursor: pointer;
+}
+main{
+    display: block;
+    padding: 2rem 7rem 0 7rem;
+}
+.first-img{
+    height: 700px;
+    width: 100%;
+}
+.para-heading{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 6.5rem;
+    font-weight: 500;
+    font-size: x-large;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.para-content{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
+    text-align: center;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+}
+.second-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 6.5rem;
+
+}
+.second-first-img{
+    width: 45%;
+    height: 650px;
+
+}
+.second-second-img{
+    width: 35%;
+    height: 300px;
+    align-items: center;
+    padding-top: 10rem;
+    
+}
+
+.third-img{
+    height: 400px;
+    width: 50%;
+    margin-top: 6.5rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px){
+    .main{
+        padding: 0;
+        margin: 0;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .menu-icon{
+        display: none;
+    }
+    .left-header{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .left-menu-items{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+    }
+    .left-menu-items li:hover{
+        align-items: center;
+        justify-content: center;
+        display: inline-block;
+        color: rgb(245, 225, 176);
+    }
+    .header-right{
+        padding-top: 10px;
+    }
+    .header-right-items{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+    }
+    .header-right-items li:hover{
+         color: rgb(245, 225, 176);
+    }
+
+    
+}
